@@ -20,3 +20,16 @@
     -> 너무 커지면 오버피팅하기 쉬워짐
     -> 너무 작으면 표현력의 부족으로 언더피팅
     : 개인적으로 가장 중요한 파라미터로 생각함
+
+4. 5_x.py - Scikit-Suprise를 활용
+    1) load data - Read
+    2) split train/test - model_selection
+    3) algorithm - BaselineOnly, KNNWithMeans, SVD, SVDpp
+    4) prediction - model.test()
+    5) 성능: accuracy.rmse(prediction)
+    (총평) 기본적인 CF, SVD(MF) 모델을 만들기 쉬움
+    하지만 Deep learning 모델을 지원하지 않음
+    시간이 오래 걸림 -> cuda를 지원하는지 모르겠음
+    즉, 간단한 prototype을 만드는데 유용하지만 상용화 어플로는 글쎄..
+
+5. 
