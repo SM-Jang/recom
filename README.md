@@ -32,4 +32,19 @@
     시간이 오래 걸림 -> cuda를 지원하는지 모르겠음
     즉, 간단한 prototype을 만드는데 유용하지만 상용화 어플로는 글쎄..
 
-5. 
+5. 6_x.py - Tensorflow를 활용한 deep learning
+    1) load data as csv
+    2) Embedding: user[M,K], item [N,K]
+    3) Embedding: user_bias[M,1], item[N,1]
+    4) Calculate the Mean: mu
+    5) DNN -> user X item (with concatenate)
+    6) loss = pred - true (RMSE)
+
+6. 7_x.py - Hybrid 추천 시스템
+    1) Train CF
+    2) Train MF(SVD)
+    3) Train DL
+    4) 결합 - 예측값을 weighted sum
+    5) Ensemble과 거의 같은 형식으로 동작
+    : 한 알고리즘이 잡아내지 못하는 평가 패턴을
+    다른 알고리즘이 보완해주는 느낌
